@@ -1,18 +1,16 @@
-[project]
+[tool.poetry]
 name = "laboratorio2-ia"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "Jesús Andrés",email = "jramosalc@ucvvirtual.edu.pe"}
-]
-requires-python = ">=3.14"
-dependencies = [
-    "opencv-python (>=4.13.0.92,<5.0.0.0)",
-    "numpy (>=2.4.4,<3.0.0)",
-    "matplotlib (>=3.10.8,<4.0.0)"
-]
+description = "Laboratorio de IA"
+authors = ["Jesús Andrés <jramosalc@ucvvirtual.edu.pe>"]
+package-mode = false
 
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "*"
+numpy = "*"
+matplotlib = "*"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
